@@ -1,0 +1,15 @@
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\bin\Debug\net9.0\Travelling salesman problem.exe
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\bin\Debug\net9.0\Travelling salesman problem.deps.json
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\bin\Debug\net9.0\Travelling salesman problem.runtimeconfig.json
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\bin\Debug\net9.0\Travelling salesman problem.dll
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\bin\Debug\net9.0\Travelling salesman problem.pdb
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.AssemblyInfoInputs.cache
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.AssemblyInfo.cs
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.csproj.CoreCompileInputs.cache
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.sourcelink.json
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.dll
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\refint\Travelling salesman problem.dll
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.pdb
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\Travelling salesman problem.genruntimeconfig.cache
+C:\Users\tanya\OneDrive\Desktop\DISCRETE\salesman\obj\Debug\net9.0\ref\Travelling salesman problem.dll
