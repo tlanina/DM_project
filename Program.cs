@@ -4,27 +4,59 @@ using Travelling_salesman_problem;
 
 class Program
 {
-    static void PrintAdjacencyMatrix(Graph graph)
+    static void PrintAdjacencyMatrix(Graph graph, int chunkSize = 20)
     {
         int n = graph.VerticesCount;
-
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
         Console.WriteLine("Матриця суміжності:");
-        for (int i = 0; i < n; i++)
+
+        for (int startCol = 0; startCol < n; startCol += chunkSize)
         {
-            for (int j = 0; j < n; j++)
+            int endCol = Math.Min(startCol + chunkSize, n);
+
+            Console.Write("     ");
+            for (int j = startCol; j < endCol; j++)
             {
-                int weight = graph.GetWeight(i, j);
-                string value = weight == int.MaxValue ? "∞" : weight.ToString();
-                Console.Write($"{value,6} "); 
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write($"{j,4} ");
             }
+            Console.ResetColor();
             Console.WriteLine();
+
+            Console.WriteLine("     " + new string('-', 5 * (endCol - startCol)));
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write($"{i,3} | ");
+                Console.ResetColor();
+
+                for (int j = startCol; j < endCol; j++)
+                {
+                    int weight = graph.GetWeight(i, j);
+                    if (weight == int.MaxValue || double.IsInfinity(weight))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                        Console.Write($"{"∞",4} ");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write($"{weight,4} ");
+                    }
+                    Console.ResetColor();
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine(); 
         }
     }
 
     static void Main(string[] args)
     {
         
-        int n = 20;  
+        int n = 100;  
         double fully = 1.0; 
         var graph = GraphGenerator.GenerateRandomGraph(n, fully, useMatrix: true);
         
